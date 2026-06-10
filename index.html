@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0034)http://www.roblox.com/home?nl=true -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:fb="http://www.facebook.com/2008/fbml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- MachineID: WEB1 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,requiresActiveX=true">
+    
+    <meta http-equiv="Content-Language" content="en-us">
+    <meta name="author" content="ROBLOX Corporation">
+    <meta name="description" content="User-generated MMO gaming site for kids, teens, and adults. Players architect their own worlds. Builders create free online games that simulate the real world. Create and play amazing 3D games. An online gaming cloud and distributed physics engine.">
+    <meta name="keywords" content="free games, online games, building games, virtual worlds, free mmo, gaming cloud, physics engine">
+    
+    
+
+    <title>RoTix</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="imgs/Logo_NoText.png">
+    
+    
+<link rel="stylesheet" href="style.css">
+
+    
+<link rel="stylesheet" href="homestyle.css">
+
+
+<audio id="hoverSound" src="sounds/hover.mp3"></audio>
+<audio id="clickSound" src="sounds/click.mp3"></audio>
+<audio id="downloadSound" src="sounds/download.mp3"></audio>
+
+
+<script>
+
+
+
+const hoverSound =
+document.getElementById("hoverSound");
+
+const clickSound =
+document.getElementById("clickSound");
+
+document.querySelectorAll("a").forEach(btn => {
+
+    btn.addEventListener("mouseenter", () => {
+
+        hoverSound.currentTime = 0;
+        hoverSound.play();
+
+    });
+
+    btn.addEventListener("click", () => {
+
+        clickSound.currentTime = 0;
+        clickSound.play();
+
+    });
+
+});
+
+</script>
+
+
+
+
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    const loader =
+        document.getElementById("RoTiXLoader");
+
+    // Already shown once?
+    if(localStorage.getItem("RoTiXSplashSeen")){
+
+        loader.remove();
+        return;
+
+    }
+
+    // Mark as seen
+    localStorage.setItem(
+        "RoTiXSplashSeen",
+        "true"
+    );
+
+    // Show for 3 seconds
+    setTimeout(function(){
+
+        loader.style.transition =
+            "opacity 1s ease";
+
+        loader.style.opacity = "0";
+
+        setTimeout(function(){
+
+            loader.remove();
+
+        },1000);
+
+    },3000);
+
+});
+
+</script>
+
+<div id="RoTiXLoader">
+
+    <div class="loader-overlay"></div>
+
+    <div class="loader-content">
+
+        <img src="imgs/Logo_NoText.png" id="LoaderLogo">
+
+        <p>Loading Assets...</p>
+
+    </div>
+
+</div>                     
+
+
+<div class="site-header">
+    <div id="navigation-container">
+<a href="index.html" class="btn-logo">
+    <img src="imgs/Logo_NoText.png" alt="RoTix">
+</a>
+        <div id="navigation-menu">
+            <ul>
+                <li><a href="http://www.roblox.com/home" ref="nav-myroblox" data-se="nav-myhome">Home</a></li>
+                
+                    <li><a data-se="nav-develop" href="http://www.roblox.com/develop" title="Develop" ref="nav-develop">Versions</a></li>
+                <li><a data-se="nav-forum" onclick="" href="http://www.roblox.com/Forum/Default.aspx" style="" title="Forum" ref="nav-forum">Discord</a></li>
+                <li class="more-list-item" drop-down-nav-button="more-list-item">
+        
+                    <div class="dropdownnavcontainer" style="display:none;" drop-down-nav-container="more-list-item">
+                        <div class="dropdownmainnav" style="z-index:1023">
+                            <a class="dropdownoption" data-se="nav-more-help" href="http://www.roblox.com/Help/Builderman.aspx" title="Help" ref="nav-help"><span>Help</span></a>
+                            <div style="clear:both;"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+<div id="AlertSpace">
+    <div class="AlertItem" style="max-width: 50px;text-align:center;">
+        <a href="indexdownload.html" id="lsLoginStatus" data-se="nav-logout" class="logoutButton">Download</a>
+    </div>
+    <div class="HeaderDivider"></div>
+    </a>
+
+
+    <a data-se="nav-login" href="http://www.roblox.com/User.aspx">
+        <div id="AuthenticatedUserNameWrapper">
+            <div id="AuthenticatedUserName">
+                
+                <span class="login-span notranslate">
+                    <img id="over13icon" src="./ROBLOX.com_files/8ed6b064a35786706f738c0858345c11.png" alt="" style="vertical-align:middle;padding-right:5px;padding-left:0px;" original-title="This is a 13+ account.">
+                    RoTix - Mod
+                </span>
+            </div>
+        </div> 
+
+    </a>
+</div>
+    </div>
+</div>
+
+<div class="mySubmenuFixed Redesign">
+    <div id="subMenu" class="subMenu">
+        <ul>
+                <li><a data-se="subnav-sets" href="http://www.roblox.com/My/Sets.aspx">RoBuilders</a></li>
+            <li><a data-se="subnav-advertising" href="http://www.roblox.com/develop?Page=ads">Advertising</a></li>
+        </ul>
+    </div>
+</div>
+<div class="forceSpaceUnderSubmenu">&nbsp;</div> 
+            <div class="forceSpace">&nbsp;</div>
+        <noscript>&lt;div class="SystemAlert"&gt;&lt;div class="SystemAlertText"&gt;Please enable Javascript to use all the features on this site.&lt;/div&gt;&lt;/div&gt;</noscript>
+        <div id="BodyWrapper">
+            <div id="RepositionBody">
+                <div id="Body" style="width:970px">
+                    		   
+
+<div id="HomeContainer" class="home-container" data-facebook-share="/facebook/share-character" data-update-status-url="/home/updatestatus" data-get-feed-url="https://www.roblox.com/feeds/getuserfeed">
+	<div>
+		<h1>Hello & Welcome to RoTix <span class="notranslate"><?php
+		echo "Portalboy13";
+		?></span>!</h1>
+	</div>
+	<div class="left-column">
+	    <div class="left-column-boxes user-avatar-container">
+<div id="UserAvatar" class="user-avatar-holder">
+    <span class="user-avatar"><img alt="RoTixPlaceholder" class="user-avatar-image" src="imgs/icon.pn"></span>
+</div>
+<div id="UserInfo" class="text">
+
+</div>	    </div>
+		<div class="left-column-boxes">
+			<h3>Roblox News</h3>
+			<div class="notranslate text news-container">
+				<div id="RobloxNews">
+    <div class="roblox-news-feed">
+
+                    <h3>RoTix being in development!</h3>
+
+    </div>
+
+</div>
+			</div>
+		</div>
+	    <div class="left-column-boxes">
+<div class="best-friends">
+    <div class="user">
+        <div class="clear"></div>
+    </div>
+    <div class="user">
+        <div class="clear"></div>
+    </div>
+    <div class="user">
+        <div class="clear"></div>
+    </div>
+</div>
+</div>
+	        <div style="clear:both;"></div>
+	    </div>
+            <div class="left-column-boxes text">
+                	
+	<div id="fbNotLoggedIn">
+			<img border="0" alt="Discord" src="imgs/DiscordLogo@4x.png">
+			<div style="text-align: left; margin: 5px">
+				Come to the Discord server where u can find all the versions of RoTix!<br>
+			</div>
+		<a class="facebook-login" href="http://www.roblox.com/facebook/authorize?ReturnTo=%2Fmy%2Fhome.aspx">
+			<span class="left"></span>
+			<span class="middle">Join the Discord server!<span>Discord Server</span></span>
+			<span class="right"></span>
+		</a>
+			<div class="facepile">
+				<p style="color: Gray; font-size: smaller">Thank you for visiting this page!.</p>
+			</div>
+	</div>
+
+            </div>
+	</div>
+
+	<div class="middle-column">
+		<div id="statusUpdateBox" class="middle-column-box status-update">
+		    
+		</div>
+
+        <div id="FeedificationsContainer" class="">
+
+</div>
+
+		<div id="FeedContainer" class="middle-column-box feed-container">
+			<h2>Feed</h2>
+			<div id="FeedPanel">
+				<div id="AjaxFeed" class="text"><div class="text">
+		<div class="divider-top feed-container">
+			<div class="feed-image-container notranslate">		</div>
+			<div class="feed-text-container text">
+				<span class="notranslate"><h2>No release date</h2><br><div class="Feedtext">"well i need to remake/get the assets"</div> (posted by JJKCat/RoTix Creator)</span>
+				<span style="display: block; padding-top: 5px; color: #AAA; font-size: 11px;">6/9/2026 at 4:02 PM</span> 
+			</div>
+
+			<div class="clear"></div>
+		</div>
+		<div class="divider-top feed-container">
+
+		</div>
+</div>
+</div>
+               </div>
+    </div>
+	<div class="clear"></div>
+	<div id="UserScreenContainer">
+
+	</div>
+</div>
+
+
+                    <div style="clear:both"></div>
+                </div>
+            </div>
+        </div>
+
+<div id="Footer" class="footer-container">
+    <div class="FooterNav">
+        <a href="http://corp.roblox.com/advertise-on-roblox" class="roblox-interstitial">Advertise with RoTix</a>
+        &nbsp;|&nbsp; 
+        <a href="http://corp.roblox.com/" class="roblox-interstitial">About RoTix</a>
+        &nbsp;|&nbsp;
+        <a href="http://shop.roblox.com/" class="roblox-interstitial">Shop</a>
+  
+            
+                    <div class="dropuplanguagecontainer" style="display:none;" drop-down-nav-container="LanguageTrigger">
+                        <div class="dropdownmainnav" style="z-index:1023">
+                                <a href="http://www.roblox.com/UserLanguage/LanguageRedirect?languageCode=de&relativePath=%2fhome%3fnl%3dtrue" class="LanguageOption js-lang" data-js-langcode="de"><span class="notranslate">Deutsch</span>&nbsp;(German) </a>
+                            </div>  
+                    </div>
+            </span> 
+    </div>
+ 
+    <div class="legal">
+        <div class="left">
+            <div id="a15b1695-1a5a-49a9-94f0-9cd25ae6c3b2">
+</div>
+        </div>
+        <div class="right">
+            <p class="Legalese">
+    RoTix, Not sponsored by any other Mod or Team, this is a solo project, u can check RoTix <a href="http://corp.roblox.com/" ref="footer-smallabout" class="roblox-interstitial">Discord Server!</a>, ©2026. RoTix.
+</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+    </div>
+    
+</div>
+
+
+</body>
+</html>
